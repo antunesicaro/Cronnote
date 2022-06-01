@@ -1,0 +1,191 @@
+<div id="starter" ng-init="" ng-destroy="" data-component="crn-start" screen-params="" primary-datasource="Nota">
+<h1 class="component-holder text-left h3 title" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-56878">Nota</h1>
+
+<datasource data-component="crn-datasource" filter="" name="Nota" entity="app.Nota" keys="_objectKey" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;titulo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;conteudo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;colecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;colecao_nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;maxRecord&quot;:100,&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;titulo&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div role="search" ng-hide="Nota.inserting || Nota.editing" data-component="crn-textinput" id="crn-datasource-filter-general56878" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<section ng-hide="Nota.editing || Nota.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid
+            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;Nota&quot;,&quot;entity&quot;:&quot;app.Nota&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Nota&quot;,&quot;customId&quot;:&quot;Nota&quot;,&quot;name&quot;:&quot;Nota&quot;,&quot;customQueryName&quot;:&quot;app.Nota&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Nota&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;titulo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;conteudo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;colecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;colecao_nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;titulo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;conteudo&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;data&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;colecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;colecao_nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;user_name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app.Nota&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;titulo&quot;,&quot;headerText&quot;:&quot;Titulo&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;headerText&quot;:&quot;{{ 'Action' | translate }}&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;showAsImage&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false},&quot;aggregates&quot;:[],&quot;widthDevices&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[],&quot;fillDatasource&quot;:false,&quot;enableModalSaveAdd&quot;:false}"
+            ng-model="vars.grid56878"
+            class=""
+            style=""
+            scrollable="false">
+    </cron-grid>
+</section>
+
+<div data-component="crn-form" id="crn-form-form-Nota-56878">
+    <section class="form" ng-show="Nota.editing || Nota.inserting">
+        <form crn-datasource="Nota" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startInserting">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startInserting()" aria-label="{{'StartInserting' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-plus" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-startEditing">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.startEditing()" aria-label="{{'startEditing' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-pencil" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-previous">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.previous()" ng-disabled="!datasource.hasPrevious()" aria-label="{{'Before' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-left" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-next">
+                    <button class="btn k-button btn-block btn-default btn-fab" ng-click="datasource.next()" ng-disabled="!datasource.hasNext()" aria-label="{{'Next' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-default" xattr-disabled="">
+                        <i class="glyphicon glyphicon-chevron-right" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="crn-button-remove">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.remove()" aria-label="{{'Remove' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-remove" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_post_56878">
+                    <button class="btn k-button btn-block btn-success btn-fab" ng-click="datasource.post()" aria-label="{{'SaveChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-success" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ok" icon-theme=""></i>
+                    </button>
+                </div>
+                <div class="component-holder ng-scope" data-component="crn-button" id="btn_crud_cancel_56878">
+                    <button class="btn k-button btn-block btn-danger btn-fab" ng-click="datasource.cancel()" aria-label="{{'CancelChanges' | translate}}" xattr-fullsize="btn-block" xattr-theme="btn-danger" xattr-disabled="">
+                        <i class="glyphicon glyphicon-ban-circle" icon-theme=""></i>
+                    </button>
+                </div>
+            </div>
+            <br/>
+            <div class="crn-fieldset" ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-titulo-56878" class="">
+                        <div class="form-group">
+                                <label for="textinput-titulo" class="">Titulo</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="Nota.active.titulo"
+                                            class="form-control k-textbox"
+                                            id="textinput-titulo"
+                                            placeholder="Titulo"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-id-56878" class="">
+                        <div class="form-group">
+                                <label for="textinput-id" class="">Id</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="Nota.active.id"
+                                            class="form-control k-textbox"
+                                            id="textinput-id"
+                                            placeholder="Id"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-conteudo-56878" class="">
+                        <div class="form-group">
+                                <label for="textinput-conteudo" class="">Conteudo</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="Nota.active.conteudo"
+                                            class="form-control k-textbox"
+                                            id="textinput-conteudo"
+                                            placeholder="Conteudo"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-data-56878" class="">
+                        <div class="form-group">
+                                <label for="textinput-data" class="">Data</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="datetime"
+                                            ng-model="Nota.active.data"
+                                            class="form-control k-textbox"
+                                            id="textinput-data"
+                                            placeholder="Data"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                        <datasource data-component="crn-datasource" name="ColecaoCombo" entity="app.Colecao" keys="_objectKey" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" lazy=true></datasource>
+
+
+                    <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-colecao-56878" class="">
+                        <div class="form-group">
+                                <label for="enterprise-dynamic-combobox-colecao" class="">Colecao</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <cron-dynamic-select
+                                            
+                                            id="enterprise-dynamic-combobox-colecao"
+                                            name="enterprise-dynamic-combobox-colecao"
+                                            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;ColecaoCombo&quot;,&quot;entity&quot;:&quot;app.Colecao&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Colecao&quot;,&quot;customId&quot;:&quot;Colecao&quot;,&quot;name&quot;:&quot;ColecaoCombo&quot;,&quot;customQueryName&quot;:&quot;app.Colecao&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Colecao&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;nomecolecao&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.Colecao&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;nomecolecao&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false}"
+                                            ng-model="Nota.active.colecao"
+                                            class="crn-select form-control">
+                                    </cron-dynamic-select>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                        <datasource data-component="crn-datasource" name="UserCombo" entity="app.User" keys="_objectKey" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;accessFailedCount&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;emailConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnd&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedEmail&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedUserName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;passwordHistory&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumber&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumberConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;securityStamp&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;twoFactorEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;userName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}]" lazy=true></datasource>
+
+
+                    <div data-component="crn-enterprise-dynamic-combobox" id="crn-enterprise-dynamic-combobox-user-56878" class="">
+                        <div class="form-group">
+                                <label for="enterprise-dynamic-combobox-user" class="">User</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <cron-dynamic-select
+                                            
+                                            id="enterprise-dynamic-combobox-user"
+                                            name="enterprise-dynamic-combobox-user"
+                                            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;UserCombo&quot;,&quot;entity&quot;:&quot;app.User&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.User&quot;,&quot;customId&quot;:&quot;User&quot;,&quot;name&quot;:&quot;UserCombo&quot;,&quot;customQueryName&quot;:&quot;app.User&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.User&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;accessFailedCount&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;emailConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnd&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedEmail&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedUserName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;passwordHistory&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumber&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumberConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;securityStamp&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;twoFactorEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;userName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;type&quot;:&quot;entity&quot;,&quot;hasError&quot;:false},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;accessFailedCount&quot;,&quot;type&quot;:&quot;Int32&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;emailConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;lockoutEnd&quot;,&quot;type&quot;:&quot;DateTime&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedEmail&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;normalizedUserName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;passwordHistory&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumber&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;phoneNumberConfirmed&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;securityStamp&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;twoFactorEnabled&quot;,&quot;type&quot;:&quot;Boolean&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;userName&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;Binary&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;_objectKey&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true}],&quot;id&quot;:&quot;app.User&quot;},&quot;filter&quot;:&quot;contains&quot;,&quot;dataTextField&quot;:&quot;name&quot;,&quot;dataValueField&quot;:&quot;_objectKey&quot;,&quot;dynamic&quot;:true,&quot;valuePrimitive&quot;:true,&quot;relationDataSource&quot;:{&quot;entityDataSource&quot;:{&quot;hasError&quot;:false},&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;changeCursor&quot;:true,&quot;customTemplate&quot;:false,&quot;fillDatasource&quot;:false}"
+                                            ng-model="Nota.active.user"
+                                            class="crn-select form-control">
+                                    </cron-dynamic-select>
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </div>
+        </form>
+    </section>
+    <section class="form" ng-show="Nota.editing || Nota.inserting">
+        <form>
+            <div>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </div>
+        </form>
+    </section>
+</div>
+
+
+</div>
