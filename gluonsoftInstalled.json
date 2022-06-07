@@ -1,0 +1,51 @@
+[
+  {
+    "gluonsoftId": "198F3DFA-DF54-4F83-A0C1-2BA3AF671A0A",
+    "versionId": "713C96CD-F095-4B54-8738-5194241C169A",
+    "name": "PouchDB – The Database that Syncs!",
+    "version": "1.2.0",
+    "dateAdded": "2022-06-01 14:50:19",
+    "filesMerged": [
+      {
+        "name": "www",
+        "path": "/src/main/mobileapp/www",
+        "npmDependencies": [
+          {
+            "name": "cronapi-pouchdb",
+            "version": "1.2.0"
+          }
+        ]
+      },
+      {
+        "name": "index.html",
+        "path": "/src/main/mobileapp/www/index.html",
+        "htmlDependencies": [
+          {
+            "src": "node_modules/cronapi-pouchdb/dist/pouchdb.cronapi.min.js",
+            "type": "script"
+          }
+        ]
+      },
+      {
+        "name": "webapp",
+        "path": "/src/main/webapp",
+        "npmDependencies": [
+          {
+            "name": "cronapi-pouchdb",
+            "version": "1.2.0"
+          }
+        ]
+      },
+      {
+        "name": "index.html",
+        "path": "/src/main/webapp/index.html",
+        "htmlDependencies": [
+          {
+            "src": "node_modules/cronapi-pouchdb/dist/pouchdb.cronapi.min.js",
+            "type": "script"
+          }
+        ]
+      }
+    ]
+  }
+]

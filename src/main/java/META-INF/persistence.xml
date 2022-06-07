@@ -3,10 +3,10 @@
     <persistence-unit name="app" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <non-jta-data-source>java:comp/env/jdbc/main</non-jta-data-source>
+        <class>app.entity.Nota</class>
         <class>app.entity.UserRole</class>
         <class>app.entity.ApplicationUser</class>
         <class>app.entity.User</class>
-        <class>app.entity.Nota</class>
         <class>app.entity.AuditLog</class>
         <class>app.entity.Login</class>
         <class>app.entity.View</class>

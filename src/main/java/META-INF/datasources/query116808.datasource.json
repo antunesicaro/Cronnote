@@ -1,0 +1,164 @@
+{
+  "customId": "query116808",
+  "queryName": "notaUser",
+  "sourceType": "entityFullName",
+  "baseEntity": null,
+  "blockly": null,
+  "entitySimpleName": "Nota",
+  "entityFullName": "app.entity.Nota",
+  "query": {
+    "isValid": true,
+    "isEmpty": false,
+    "operationType": "object",
+    "type": "select",
+    "rulesEntity": [
+      {
+        "entity": "Nota",
+        "namespace": "app.entity.Nota",
+        "alias": "n"
+      }
+    ],
+    "rulesSelect": [
+      {
+        "func": "get",
+        "field": "n",
+        "type": "string"
+      }
+    ],
+    "rulesGroupBy": [],
+    "rulesHaving": [],
+    "rulesOrderBy": [],
+    "rules": {
+      "condition": "AND",
+      "rules": [
+        {
+          "id": "n.user.id",
+          "field": "n.user.id",
+          "type": "string",
+          "input": "text",
+          "operator": "equal",
+          "value": ":userId",
+          "valueIsField": false
+        }
+      ],
+      "not": false,
+      "valid": true
+    },
+    "isRawSql": false,
+    "multiTenant": false,
+    "paginatorAutomatic": false,
+    "pagination": false
+  },
+  "queryParamsValues": [
+    {
+      "fieldName": "userId",
+      "fieldValue": {
+        "type": "server",
+        "blocklyMethod": "obterIddoUsuario",
+        "blocklyClass": "blockly.UserManager",
+        "blocklyLanguage": "java",
+        "blocklyParams": [],
+        "blocklyJson": {
+          "namespace": "blockly.UserManager",
+          "sourcePath": "src/main/java/blockly/UserManager.blockly",
+          "language": "java",
+          "methods": [
+            {
+              "name": "BeforeInsert",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeUpdate",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "BeforeDelete",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "Normalize",
+              "hasReturn": "true",
+              "params": [
+                "Entidade\u0026lt;app.entity.User\u0026gt;"
+              ]
+            },
+            {
+              "name": "obterIddoUsuario",
+              "hasReturn": "true",
+              "params": []
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "verbs": {
+    "GET": true,
+    "GETAuthorities": null,
+    "POST": true,
+    "POSTAuthorities": null,
+    "PUT": true,
+    "PUTAuthorities": null,
+    "DELETE": true,
+    "DELETEAuthorities": null,
+    "FILTER": true,
+    "FILTERAuthorities": null,
+    "COUNT": true,
+    "COUNTAuthorities": null
+  },
+  "events": {
+    "beforeInsert": null,
+    "beforeUpdate": null,
+    "beforeDelete": null,
+    "afterInsert": null,
+    "afterUpdate": null,
+    "afterDelete": null,
+    "onNavigate": null,
+    "onAuthorize": null,
+    "onError": null
+  },
+  "defaultValues": {
+    "id": null,
+    "titulo": null,
+    "conteudo": null,
+    "data": null,
+    "colecao": null,
+    "user": null
+  },
+  "defaultValuesProperties": {
+    "id": null,
+    "titulo": null,
+    "conteudo": null,
+    "data": null,
+    "colecao": null,
+    "user": null
+  },
+  "security": {
+    "id": null,
+    "titulo": null,
+    "conteudo": null,
+    "data": null,
+    "colecao": null,
+    "user": null
+  },
+  "calcFields": {},
+  "calcFieldsSecurity": {},
+  "calcFieldsProperties": {},
+  "headers": {},
+  "errorHandles": {
+    "primaryKey": null,
+    "foreignKey": null
+  },
+  "serviceUrl": "api/cronapi/odata/v2/app/query116808/",
+  "audit": false,
+  "swagger": false
+}
